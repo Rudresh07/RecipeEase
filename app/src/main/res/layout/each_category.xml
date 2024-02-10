@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        style="@style/horizontal_recycler_img"
+        android:background="@drawable/category_card_bc"
+        android:src="@drawable/category_salad" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryImage"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="-23dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Salad"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RecipeEase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="which_indian_food_would_you_like_to_cook">Which Indian food would you like to cook ?</string>
+    <string name="foodie">Foodie!</string>
+    <string name="hello">Hello</string>
+    <string name="categories">Categories</string>
+    <string name="search_recipe">Search recipe</string>
+    <string name="categories_text">Categories</string>
+    <string name="popular_recipe">Popular recipe</string>
+    <string name="pizza">Pizza</string>
+</resources>
