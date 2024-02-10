@@ -21,16 +21,49 @@
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/card_back_btn"
-        android:src="@drawable/menu_home"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/linearLayout"
+       android:layout_marginTop="15dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       >
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="start|center_vertical"
+           >
+           <ImageView
+               android:id="@+id/imageView"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginStart="16dp"
+               android:background="@drawable/card_back_btn"
+               android:src="@drawable/menu_home"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="end|center_vertical">
+           <ImageView
+               android:id="@+id/bard"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginEnd="20dp"
+               android:background="@drawable/card_back_btn"
+               android:src="@drawable/bard" />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
 
     <ImageView
         android:layout_width="190dp"
@@ -54,7 +87,7 @@
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView2"
@@ -68,7 +101,7 @@
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView3"
@@ -154,18 +187,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <ImageView
-        android:id="@+id/bard"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="289dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/bard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

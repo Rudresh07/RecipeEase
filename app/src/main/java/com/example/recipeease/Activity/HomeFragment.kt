@@ -77,6 +77,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_AIFragment)
         }
 
+        if (popularCategoryAdapter.categoryList.isEmpty()) {
+            getPopularFood("Seafood")
+        }
+
 
         return binding.root
     }
