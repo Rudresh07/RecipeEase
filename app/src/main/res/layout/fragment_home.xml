@@ -37,7 +37,7 @@
            android:gravity="start|center_vertical"
            >
            <ImageView
-               android:id="@+id/imageView"
+               android:id="@+id/NavView"
                android:layout_width="40dp"
                android:layout_height="40dp"
                android:layout_marginStart="16dp"

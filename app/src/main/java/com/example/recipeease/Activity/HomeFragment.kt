@@ -1,11 +1,18 @@
 package com.example.recipeease.Activity
 
+import android.app.Dialog
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import androidx.compose.ui.window.Dialog
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -53,6 +60,7 @@ class HomeFragment : Fragment() {
         }
 
 
+
         // Fetch categories
 
            getCategories()
@@ -69,6 +77,22 @@ class HomeFragment : Fragment() {
             }
         })
 
+        //get selected item id
+
+        popularFoodAdapter.setOnItemClickListener(object :PopularFoodAdapter.OnItemClickListener
+        {
+            override fun onItemClick(position: Int) {
+                val clickedFood = popularFoodAdapter.foodList[position]
+                val foodId = clickedFood.idMeal
+
+                val intent = Intent(requireContext(),RecipeDetail::class.java).apply {
+                    putExtra("FoodId",foodId)
+                }
+                startActivity(intent)
+            }
+
+        })
+
         binding.editTextText.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
         }
@@ -79,6 +103,21 @@ class HomeFragment : Fragment() {
 
         if (popularCategoryAdapter.categoryList.isEmpty()) {
             getPopularFood("Seafood")
+        }
+
+        binding.NavView.setOnClickListener {
+            val dialog = Dialog(requireContext())
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.setContentView(R.layout.app_info)
+
+            dialog.show()
+            dialog.window!!.setLayout(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+            dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            dialog.window!!.setGravity(Gravity.BOTTOM)
+
         }
 
 

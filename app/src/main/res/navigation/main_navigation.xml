@@ -22,49 +22,29 @@
         android:name="com.example.recipeease.Activity.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
+
         <action
             android:id="@+id/action_homeFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_recipeDetailMainFragment2"
-            app:destination="@id/recipeDetailMainFragment" />
+
         <action
             android:id="@+id/action_homeFragment_to_AIFragment"
             app:destination="@id/AIFragment" />
+
     </fragment>
+
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.recipeease.Activity.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
-            android:id="@+id/action_searchFragment_to_recipeDetailFragment"
-            app:destination="@id/recipeDetailFragment" />
-        <action
             android:id="@+id/action_searchFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/recipeDetailFragment"
-        android:name="com.example.recipeease.Activity.RecipeDetailFragment"
-        android:label="fragment_recipe_detail"
-        tools:layout="@layout/fragment_recipe_detail" >
-        <action
-            android:id="@+id/action_recipeDetailFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/recipeDetailMainFragment"
-        android:name="com.example.recipeease.Activity.RecipeDetailMainFragment"
-        android:label="fragment_recipe_detail_main"
-        tools:layout="@layout/fragment_recipe_detail_main" >
-        <action
-            android:id="@+id/action_recipeDetailMainFragment_to_homeFragment2"
-            app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/AIFragment"
-        android:name="com.example.recipeease.AIFragment"
+        android:name="com.example.recipeease.Activity.AIFragment"
         android:label="fragment_a_i"
         tools:layout="@layout/fragment_a_i" >
         <action

@@ -15,16 +15,29 @@ import com.squareup.picasso.Picasso
 class PopularFoodAdapter(var foodList:List<Meal>, context:Activity):
     RecyclerView.Adapter<PopularFoodAdapter.PopularFoodViewHolder>() {
 
+    private lateinit var foodItemClick: OnItemClickListener
 
-    class PopularFoodViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        foodItemClick = listener
+    }
+    class PopularFoodViewHolder(itemView: View, listener: OnItemClickListener):RecyclerView.ViewHolder(itemView) {
 
         val foodImage: ImageView = itemView.findViewById(R.id.item_img)
         val foodName:TextView = itemView.findViewById(R.id.item_name)
+
+        init {
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularFoodViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.popular_item,parent,false)
-        return PopularFoodViewHolder(view)
+        return PopularFoodViewHolder(view,foodItemClick)
     }
 
     override fun getItemCount(): Int {

@@ -3,7 +3,7 @@ package com.example.recipeease.interfaces
 
 import com.example.recipeease.Model.CategoryResponse
 import com.example.recipeease.Model.PopularFood
-import com.example.recipeease.Model.RecipeDetail
+import com.example.recipeease.Model.RecipeDetailData
 import com.example.recipeease.Model.SearchedData
 import retrofit2.Call
 import retrofit2.http.GET
@@ -21,5 +21,5 @@ interface GetDataService {
     fun searchRecipe(@Query("f") letter:String):Call<SearchedData>
 
     @GET("lookup.php")
-    fun recipeDetail(@Query("i")id:Int):Call<RecipeDetail>
+    fun recipeDetail(@Query("i")id:Int):Call<RecipeDetailData>
 }

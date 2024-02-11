@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RecipeDetail"
+    app:layoutDescription="@xml/activity_recipe_detail_scene">
+
+
+    <ImageView
+        android:id="@+id/MealImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza_sample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back_icon"
+        android:hapticFeedbackEnabled="true"
+        android:clickable="true"
+        android:background="@drawable/card_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fullScreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:src="@drawable/full_size_ic"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="@+id/MealImage"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/shade"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/image_btm_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/MealImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MealImage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/card_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MealImage">
+
+        <TextView
+            android:id="@+id/recipe_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="55dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="This is sample text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ingredient"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/recipe_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_ing"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Ingredients" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingredientScroll"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_below="@+id/ingredient">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="this is ingredients"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="10dp"
+                android:id="@+id/ing_Data"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/steps"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/recipe_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_ing"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Steps" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/StepsScroll"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/steps"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/recipe_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="10dp"
+                android:text="this is recipe steps"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Video"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="Video"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/recipe_title"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/btn_ing"
+            android:fontFamily="@font/poppins_semibold"/>
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/webView"
+            android:layout_height="330dp"
+            android:layout_below="@+id/Video"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/scrollUp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/scroll_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

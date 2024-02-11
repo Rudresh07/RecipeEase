@@ -1,14 +1,13 @@
 package com.example.recipeease.Activity
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.example.recipeease.R
 
-
-class RecipeDetailMainFragment : Fragment() {
+class AIFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,7 +15,7 @@ class RecipeDetailMainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recipe_detail_main, container, false)
+        return inflater.inflate(R.layout.fragment_a_i, container, false)
     }
 
 

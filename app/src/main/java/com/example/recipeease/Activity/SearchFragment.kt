@@ -1,5 +1,6 @@
 package com.example.recipeease.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -52,6 +53,21 @@ class SearchFragment : Fragment() {
 
             override fun afterTextChanged(s: Editable?) {}
         })
+
+        searchAdapter.setOnItemClickListener(object :SearchAdapter.OnItemClickListener{
+            override fun onItemClick(position: Int) {
+                val clickedFood = searchAdapter.recipeList[position]
+                val foodId = clickedFood.idMeal
+
+                val intent = Intent(requireContext(),RecipeDetail::class.java).apply {
+                    putExtra("FoodId",foodId)
+                }
+                startActivity(intent)
+            }
+
+        })
+
+
         binding.BackImage.setOnClickListener {
             findNavController().navigate(R.id.action_searchFragment_to_homeFragment)
         }

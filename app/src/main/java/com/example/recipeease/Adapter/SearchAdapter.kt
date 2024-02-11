@@ -15,17 +15,31 @@ import com.squareup.picasso.Picasso
 class SearchAdapter(var recipeList:List<searchMeal>,context:Context):
     RecyclerView.Adapter<SearchAdapter.SearchAdapterViewHolder>() {
 
+    private lateinit var foodItemClick: OnItemClickListener
 
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
 
-    class SearchAdapterViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        foodItemClick = listener
+    }
+
+    class SearchAdapterViewHolder(itemView: View, listener: OnItemClickListener):RecyclerView.ViewHolder(itemView) {
 
         val foodImage: ImageView = itemView.findViewById(R.id.searched_image)
         val foodName: TextView = itemView.findViewById(R.id.searched_text)
+
+        init {
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchAdapterViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.search_item,parent,false)
-        return SearchAdapterViewHolder(view)
+        return SearchAdapterViewHolder(view, foodItemClick)
     }
 
     override fun getItemCount(): Int {
