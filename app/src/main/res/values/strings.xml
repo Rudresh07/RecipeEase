@@ -10,4 +10,7 @@
     <string name="categories_text">Categories</string>
     <string name="popular_recipe">Popular recipe</string>
     <string name="pizza">Pizza</string>
+    <string name="add_ingredient">Add Ingredient</string>
+    <string name="delete_ingredient">Delete Ingredient</string>
+    <string name="get_recipe">Get Recipe</string>
 </resources>

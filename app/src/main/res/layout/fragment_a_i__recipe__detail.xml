@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.AI_Recipe_Detail"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back_icon"
+        android:hapticFeedbackEnabled="true"
+        android:clickable="true"
+        android:background="@drawable/card_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/recipe_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:layout_marginEnd="55dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:text="This is sample text"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/ingredient"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/btn_ing"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:text="Ingredients"-->
+<!--                android:layout_weight="1"  />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/steps"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/btn_ing"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+
+<!--                android:text="Steps"-->
+<!--                android:layout_weight="1"  />-->
+<!--        </LinearLayout>-->
+        <ScrollView
+            android:id="@+id/ingredientScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ing_Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="this is ingredients"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="10dp" />
+        </ScrollView>
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/StepsScroll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:visibility="gone">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/recipe_steps"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:lineSpacingExtra="10dp"-->
+<!--                android:text="this is recipe steps"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15sp"/>-->
+<!--        </ScrollView>-->
+    </LinearLayout>
+</LinearLayout>

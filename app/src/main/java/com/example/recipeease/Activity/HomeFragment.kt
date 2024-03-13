@@ -12,10 +12,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
-import androidx.compose.ui.window.Dialog
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recipeease.Adapter.PopularCategoryAdapter
@@ -26,11 +24,9 @@ import com.example.recipeease.R
 import com.example.recipeease.Retrofit.RetrofitInstance
 import com.example.recipeease.databinding.FragmentHomeBinding
 import com.example.recipeease.interfaces.GetDataService
-import com.example.recipeease.utils
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.create
 
 class HomeFragment : Fragment() {
     private lateinit var popularCategoryAdapter: PopularCategoryAdapter

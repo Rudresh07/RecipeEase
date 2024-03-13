@@ -50,5 +50,18 @@
         <action
             android:id="@+id/action_AIFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_AIFragment_to_AI_Recipe_Detail"
+            app:destination="@id/AI_Recipe_Detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/AI_Recipe_Detail"
+        android:name="com.example.recipeease.Activity.AI_Recipe_Detail"
+        android:label="fragment_a_i__recipe__detail"
+        tools:layout="@layout/fragment_a_i__recipe__detail" >
+        <action
+            android:id="@+id/action_AI_Recipe_Detail_to_AIFragment"
+            app:destination="@id/AIFragment"
+            app:popUpTo="@id/AIFragment" />
     </fragment>
 </navigation>

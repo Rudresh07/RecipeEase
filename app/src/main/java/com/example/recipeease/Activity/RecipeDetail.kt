@@ -7,8 +7,6 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.ui.graphics.Color
-import androidx.lifecycle.MutableLiveData
 import com.example.recipeease.Model.RecipeDetailData
 import com.example.recipeease.Model.searchMeal
 import com.example.recipeease.R
