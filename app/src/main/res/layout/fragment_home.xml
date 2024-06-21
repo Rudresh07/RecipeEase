@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AI_generate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+
+>
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="270dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/categories"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="@+id/textView3"
+               app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/linearLayout"
+               android:layout_marginTop="15dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="start|center_vertical">
+                   <ImageView
+                       android:id="@+id/bard"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:layout_marginEnd="20dp"
+                       android:layout_marginStart="16dp"
+                       android:background="@drawable/card_back_btn"
+                       android:src="@drawable/bard" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="end|center_vertical"
+                   >
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       app:cardCornerRadius="30dp"
+                       android:layout_marginEnd="20dp"
+                       android:background="@drawable/imageviewbg">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:gravity="center">
+                           <ImageView
+                               android:id="@+id/ProfileImage"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:focusable="true"
+                               android:scaleType="fitXY"
+                               app:srcCompat="@drawable/profilepic" />
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+
+           <ImageView
+               android:layout_width="190dp"
+               android:layout_height="190dp"
+               android:layout_marginTop="90dp"
+               android:layout_marginEnd="-10dp"
+               android:rotation="-1"
+               android:src="@drawable/home_assest1"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/hello"
+               android:textColor="@color/black"
+               android:textSize="28sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="2dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/foodie"
+               android:textColor="@color/purple_500"
+               android:textSize="28sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toEndOf="@+id/textView"
+               app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="270dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:fontFamily="@font/poppins_light"
+               android:text="@string/which_indian_food_would_you_like_to_cook"
+               android:textColor="#424242"
+               android:textSize="17sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+           <EditText
+               android:id="@+id/editTextText"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginStart="24dp"
+               android:layout_marginTop="16dp"
+               android:layout_marginEnd="24dp"
+               android:background="@drawable/searchview"
+               android:drawableStart="@drawable/baseline_search_24"
+               android:ems="10"
+               android:focusable="false"
+               android:fontFamily="@font/poppins_light"
+               android:hint="@string/search_recipe"
+               android:inputType="text"
+               android:padding="5dp"
+               android:textColor="#5A5858"
+               android:textColorHint="#5A5858"
+               android:textSize="17sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+           <TextView
+               android:id="@+id/textcat"
+               android:layout_width="270dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/categories_text"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="@+id/textView3"
+               app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/categoryRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="140dp"
+               android:layout_marginTop="4dp"
+
+               android:scrollbarAlwaysDrawHorizontalTrack="false"
+               android:scrollbarAlwaysDrawVerticalTrack="false"
+               android:scrollbars="none"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+           <TextView
+               android:id="@+id/textView9"
+               android:layout_width="255dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/popular_recipe"
+               android:textColor="@color/black"
+               android:textSize="17sp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/categoryRecyclerView" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/popular_recipe_recycle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               app:layout_constraintBottom_toTopOf="@id/textView10"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+           <TextView
+               android:id="@+id/textView10"
+               android:layout_width="255dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="@string/user_recipe"
+               android:textColor="@color/black"
+               android:textSize="17sp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/popular_recipe_recycle" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/user_recipe_recycle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="100dp"
+               android:layout_marginTop="16dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

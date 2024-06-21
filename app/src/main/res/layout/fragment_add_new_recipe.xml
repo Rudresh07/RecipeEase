@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AIFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD NEW RECIPE"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/img"
+                android:src="@drawable/no_img"/>
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="150dp"
+                android:padding="5dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="Select Image"/>
+
+            <EditText
+                android:id="@+id/edtRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchview"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Recipe Name"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:paddingStart="45dp"
+                android:textColor="#5A5858"
+                android:textColorHint="#5A5858"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/edtIngredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchview"
+                android:ems="10"
+                android:minHeight="100dp"
+                android:minLines="2"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Ingredients"
+                android:inputType="textMultiLine"
+                android:paddingStart="45dp"
+                android:textColor="#5A5858"
+                android:textColorHint="#5A5858"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchview"
+                android:ems="10"
+                android:minHeight="160dp"
+                android:minLines="2"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Give Instruction Here"
+                android:inputType="textMultiLine"
+                android:paddingStart="45dp"
+                android:textColor="#5A5858"
+                android:textColorHint="#5A5858"
+                android:textSize="17sp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/btnSaveRecipe"
+                android:layout_width="150dp"
+                android:padding="5dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/add_ingredient"
+                android:onClick="addEditText"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+

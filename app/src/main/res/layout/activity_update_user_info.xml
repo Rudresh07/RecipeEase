@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Activity.UpdateUserInfo">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update User Info"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/img"
+        android:src="@drawable/no_img"/>
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="150dp"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Select Image"/>
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/searchview"
+        android:ems="10"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_light"
+        android:hint="User Name"
+        android:inputType="textMultiLine"
+        android:minHeight="70dp"
+        android:paddingStart="45dp"
+        android:textColor="#5A5858"
+        android:textColorHint="#5A5858"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnChangeDetail"
+        android:layout_width="150dp"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Change Detail"
+        android:onClick="addEditText"/>
+
+</LinearLayout>

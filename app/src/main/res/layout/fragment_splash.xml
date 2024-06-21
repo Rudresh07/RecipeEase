@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.splashFragment"
+    android:orientation="vertical"
+    android:background="@drawable/splash_background"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/splash_img"
+        android:layout_marginTop="60dp"
+        android:id="@+id/splashImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100K+ Premium Recipie"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecipeEase"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple way to find Tasty Recipe"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</LinearLayout>
