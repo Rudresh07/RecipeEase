@@ -3,7 +3,7 @@
 # RecipeEase
 
 
-RecipeEase is an Android application that allows users to discover and share recipes. Users can create an account, log in, and explore a variety of recipes fetched from an API. They can also upload their own recipes, which are stored in Firestore for others to see. Additionally, the app features a unique functionality powered by Gemini, which generates recipes based on the ingredients provided by the user.
+RecipeEase is an smart AI integrated Android Application that allows users to discover and share recipes. Users can create an account, log in, and explore a variety of recipes fetched from an API. They can also upload their own recipes, which are stored in Firestore for others to see. Additionally, the app features a unique functionality powered by Gemini, which generates recipes based on the ingredients provided by the user.
 
 ## Features
 
@@ -16,6 +16,7 @@ RecipeEase is an Android application that allows users to discover and share rec
 5. Recipe Generation: Use Gemini to generate recipes based on provided ingredients.
 
 6. Built with Kotlin and XML: Leveraging Kotlin for logic and XML for UI design.
+7. Integrated AI to provide Recipe to user depend on the ingredient they have.
 
 ## Installation
 
