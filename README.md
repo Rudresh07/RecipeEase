@@ -12,10 +12,6 @@ RecipeEase is an smart AI integrated Android Application that allows users to di
 <img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/07ddbfa8-45d9-407d-b27a-4a60cc73d26c" width="200" height="400" />
 <img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/ac001a9a-5ce3-4711-8728-d2c754fd7621" width="200" height="400" />
 <img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/7da4f50d-a434-4f6b-b3a6-f020a5e2fdf0" width="200" height="400" />
-
-## Video
-<video src="https://github.com/user-attachments/assets/b9316a32-0c03-45a5-8387-1ec79039fdbf" width="200" height="400" />
-
 ## Features
 
 1. User Authentication: Create and log in to an account using Firebase Authentication.
@@ -28,6 +24,11 @@ RecipeEase is an smart AI integrated Android Application that allows users to di
 
 6. Built with Kotlin and XML: Leveraging Kotlin for logic and XML for UI design.
 7. Integrated AI to provide Recipe to user depend on the ingredient they have.
+
+
+## Video
+<video src="https://github.com/user-attachments/assets/b9316a32-0c03-45a5-8387-1ec79039fdbf" width="200" height="400" />
+
 
 ## Installation
 
