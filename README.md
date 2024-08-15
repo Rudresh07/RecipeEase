@@ -5,6 +5,17 @@
 
 RecipeEase is an smart AI integrated Android Application that allows users to discover and share recipes. Users can create an account, log in, and explore a variety of recipes fetched from an API. They can also upload their own recipes, which are stored in Firestore for others to see. Additionally, the app features a unique functionality powered by Gemini, which generates recipes based on the ingredients provided by the user.
 
+## Screenshots
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/22689d29-63d0-48a4-9c1e-94c2c1a43f6d" width="200" height="400" />
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/7d59c2e8-3fe9-4e0a-a02c-428b2d948dc5" width="200" height="400" />
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/f163c2fc-b08d-4a4b-9021-5b0813929eef" width="200" height="400" />
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/07ddbfa8-45d9-407d-b27a-4a60cc73d26c" width="200" height="400" />
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/ac001a9a-5ce3-4711-8728-d2c754fd7621" width="200" height="400" />
+<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/7da4f50d-a434-4f6b-b3a6-f020a5e2fdf0" width="200" height="400" />
+
+## Video
+<video src="https://github.com/user-attachments/assets/b9316a32-0c03-45a5-8387-1ec79039fdbf" width="200" height="400" />
+
 ## Features
 
 1. User Authentication: Create and log in to an account using Firebase Authentication.
@@ -38,13 +49,7 @@ To install and run RecipeEase on your local machine, follow these steps:
 3. Explore recipes fetched from the API.
 4. Upload your own recipes through the app interface.
 5. Use the ingredient-based recipe generator powered by Gemini.
-## Screenshots
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/22689d29-63d0-48a4-9c1e-94c2c1a43f6d" width="200" height="400" />
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/7d59c2e8-3fe9-4e0a-a02c-428b2d948dc5" width="200" height="400" />
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/f163c2fc-b08d-4a4b-9021-5b0813929eef" width="200" height="400" />
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/07ddbfa8-45d9-407d-b27a-4a60cc73d26c" width="200" height="400" />
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/ac001a9a-5ce3-4711-8728-d2c754fd7621" width="200" height="400" />
-<img src="https://github.com/Rudresh07/RecipeEase/assets/97966593/7da4f50d-a434-4f6b-b3a6-f020a5e2fdf0" width="200" height="400" />
+
 
 ## Dependencies
 
