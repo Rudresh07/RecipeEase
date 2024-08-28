@@ -26,9 +26,6 @@ RecipeEase is an smart AI integrated Android Application that allows users to di
 7. Integrated AI to provide Recipe to user depend on the ingredient they have.
 
 
-## Video
-<video src="https://github.com/user-attachments/assets/b9316a32-0c03-45a5-8387-1ec79039fdbf" width="200" height="400" />
-
 
 ## Installation
 
@@ -65,4 +62,7 @@ To install and run RecipeEase on your local machine, follow these steps:
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Video
+<video src="https://github.com/user-attachments/assets/b9316a32-0c03-45a5-8387-1ec79039fdbf" width="200" height="400" />
 
